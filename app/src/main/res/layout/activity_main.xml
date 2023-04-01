@@ -5,7 +5,7 @@
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#323232"
+    android:background="#AFA8A8"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/lexend_extralight"
         android:text="Song Title"
-        android:textColor="#FFF1DC"
+        android:textColor="#000000"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -90,6 +90,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.76"
         tools:ignore="MissingConstraints" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
