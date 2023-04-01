@@ -1,11 +1,10 @@
 package org.d3if3137.musicplayer
 
 import android.media.MediaPlayer
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
 import android.widget.ImageButton
 import android.widget.SeekBar
+import androidx.appcompat.app.AppCompatActivity
 import org.d3if3137.musicplayer.databinding.ActivityMainBinding
 
 
@@ -28,10 +27,11 @@ class MainActivity : AppCompatActivity() {
             if (!MediaPlayer.isPlaying){
                 MediaPlayer.start()
 
-                (R.drawable.baseline_pause_circle_outline_24) //belum berfungsi
+                binding.playBtn.setImageResource(R.drawable.baseline_pause_circle_outline_24)
+
             }else {
                 MediaPlayer.pause()
-                (R.drawable.baseline_play_circle_outline_24) //pause belum berfungsi 
+                binding.playBtn.setImageResource(R.drawable.baseline_play_circle_outline_24)
             }
         }
 
